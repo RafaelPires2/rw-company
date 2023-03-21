@@ -102,6 +102,12 @@ html {
   border-radius: 8px;
 }
 
+.c-form .c-button {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
 .c-input {
   width: 100%;
   height: 5rem;
@@ -182,6 +188,7 @@ html {
   display: flex;
   width: 100%;
   gap: 5%;
+  margin-top: 6rem;
 }
 
 .c-card-about {
