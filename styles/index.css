@@ -47,6 +47,12 @@ html {
   font-weight: 400;
 }
 
+.c-bookmark {
+  color: #6610f2;
+  text-shadow: 0px 0px 10px rgba(102, 16, 242, 0.7);
+  filter: brightness(140%);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -80,12 +86,6 @@ html {
   max-width: 800px;
   margin-right: 50px;
   gap: 2.5rem;
-}
-
-.c-bookmark {
-  color: #6610f2;
-  text-shadow: 0px 0px 10px rgba(102, 16, 242, 0.7);
-  filter: brightness(140%);
 }
 
 .c-form {
@@ -131,6 +131,12 @@ html {
   font-size: 1.8rem;
   cursor: pointer;
   color: white;
+}
+
+.c-button:hover {
+  box-shadow: 0px 0px 10px rgba(102, 16, 242, 0.7);
+  scale: 1.03;
+  transition: 0.3s;
 }
 
 .section-about {
@@ -187,4 +193,92 @@ html {
   padding: 20px 15px;
   text-align: center;
   border-radius: 8px;
+}
+
+.section-services {
+  display: flex;
+  margin-block: 6rem;
+  width: 100vw;
+  justify-content: center;
+  background-color: #080713;
+}
+.section-services h1 {
+  font-weight: 500;
+}
+.section-services p {
+  font-weight: 400;
+  opacity: 0.9;
+}
+.section-services .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-services .c-button {
+  margin-top: 6rem;
+  width: 40%;
+}
+
+.container-services {
+  display: flex;
+  width: 100%;
+  gap: 10%;
+}
+
+.section-services li {
+  list-style: initial;
+  margin-left: 100px;
+}
+
+.content-services {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 25px;
+}
+
+.accordeon {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 40%;
+}
+
+.accordeon label {
+  display: block;
+  padding-block: 1.5rem;
+  padding-left: 3rem;
+  font-weight: 700;
+  font-size: 2.2rem;
+  background: rgba(19, 18, 36, 0.7529411765);
+  color: #f5f5f5;
+  cursor: pointer;
+  border-bottom: 1px solid #6610f2;
+  border-radius: 8px;
+}
+
+.accordeon label:hover {
+  background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
+  box-shadow: 0px 0px 10px rgba(102, 16, 242, 0.7);
+}
+
+.accordeon .panel {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
+  color: #f0f0f0;
+}
+
+/* Hide checkboxes  */
+.accordeon input[type=checkbox] {
+  display: none;
+}
+
+/* Show .panel for corresponding to checked */
+.accordeon input[type=checkbox]:checked + .panel {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+  padding: 1.5em;
 }
