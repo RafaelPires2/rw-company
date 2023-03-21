@@ -1,0 +1,17 @@
+.c-input {
+    width: 100%;
+    height: 5rem;
+    border: 1px solid $color-point;
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 1.6rem;
+    color: white;
+}
+
+#textareaForm{
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}

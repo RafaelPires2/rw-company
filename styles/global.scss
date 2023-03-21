@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Saira', sans-serif;
+    background-color: $background-primary;
+}
+ul, li, a, textarea{
+    color: $color-w;
+    list-style: none;
+    text-decoration: none;
+    text-decoration-color: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+    color: white;
+}
+
+
+:root {
+    // --border-bottom:0.1px solid rgba(255, 255, 255, 0.150);
+
+    font-size: 62.5%;
+}
+
+.wrapper {
+    display: flex;
+    width: 70vw;
+    height: 100%;
+    justify-content: center;
+}
+
+.c-title{
+    font-size: 4.8rem;
+    font-weight: 600;
+}
+.c-subtitle{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.c-paragraph {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
