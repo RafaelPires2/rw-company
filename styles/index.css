@@ -325,3 +325,44 @@ html {
 .section-fqa .accordeon label {
   background-color: #080713;
 }
+
+.section-call {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.container-section-call {
+  display: flex;
+  width: 100%;
+  gap: 10%;
+}
+
+.content-call {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  text-align: left;
+}
+
+.box-call {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 5rem 3rem;
+  width: 50%;
+  background-color: rgba(37, 23, 109, 0.206);
+  border-radius: 8px;
+  font-weight: 500;
+}
+.box-call .c-button {
+  width: 100%;
+}
+
+.icon-alert {
+  width: 100px;
+  height: 100px;
+  margin-left: 150px;
+}

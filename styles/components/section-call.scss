@@ -1,0 +1,44 @@
+.section-call {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: $margin-bottom;
+}
+
+.container-section-call {
+    display: flex;
+    width: 100%;
+    gap: 10%;
+}
+
+.content-call {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: left;
+
+
+}
+
+.box-call {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 5rem 3rem;
+    width: 50%;
+    background-color: rgba(37, 23, 109, 0.206);
+    border-radius: 8px;
+    font-weight: 500;
+
+    .c-button{
+        width: 100%;
+    }
+}
+
+.icon-alert{
+    width: 100px;
+    height: 100px;
+    margin-left: 150px;
+}
