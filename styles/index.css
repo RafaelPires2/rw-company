@@ -35,22 +35,26 @@ html {
 .c-title {
   font-size: 4.8rem;
   font-weight: 600;
+  line-height: 1.2;
 }
 
 .c-subtitle {
   font-size: 2.8rem;
   font-weight: 500;
+  line-height: 1.4;
 }
 
 .c-paragraph {
   font-size: 1.6rem;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .c-bookmark {
   color: #6610f2;
   text-shadow: 0px 0px 10px rgba(102, 16, 242, 0.7);
-  filter: brightness(140%);
+  filter: saturate(2);
+  font-weight: 600;
 }
 
 .header {
@@ -237,6 +241,12 @@ html {
   margin-left: 100px;
 }
 
+.section-services li::marker {
+  color: #6610f2;
+  box-shadow: 0px 0px 10px rgba(102, 16, 242, 0.7);
+  filter: brightness(140%);
+}
+
 .content-services {
   display: flex;
   flex-direction: column;
@@ -288,4 +298,30 @@ html {
   visibility: visible;
   opacity: 1;
   padding: 1.5em;
+  transition: 0.5s;
+}
+
+.section-fqa {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 6rem;
+  background-color: rgba(19, 18, 36, 0.7529411765);
+  margin-block: 6rem;
+}
+
+.content-fqa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-fqa .accordeon {
+  width: 60%;
+}
+
+.section-fqa .accordeon label {
+  background-color: #080713;
 }

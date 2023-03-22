@@ -35,6 +35,12 @@
     list-style: initial;
     margin-left: 100px
 }
+
+.section-services li::marker{
+    color: $color-point;
+    box-shadow: $box-shadow;
+    filter: brightness(140%);
+}
 .content-services{
     display: flex;
     flex-direction: column;

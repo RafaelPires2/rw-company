@@ -1,0 +1,24 @@
+.section-fqa {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: $margin-bottom ;
+    background-color: $background-secondary;
+    margin-block: $margin-bottom;
+}
+
+.content-fqa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-fqa .accordeon {
+    width: 60%;
+}
+
+.section-fqa .accordeon label {
+    background-color: $background-primary;
+}
