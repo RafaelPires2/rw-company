@@ -366,3 +366,22 @@ html {
   height: 100px;
   margin-left: 150px;
 }
+
+.footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(19, 18, 36, 0.7529411765);
+  padding-block: 6rem;
+}
+
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials-icons img {
+  width: 40px;
+}

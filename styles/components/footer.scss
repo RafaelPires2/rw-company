@@ -1,0 +1,18 @@
+.footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-secondary;
+    padding-block: $margin-bottom;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials-icons img{
+width: 40px;
+}
