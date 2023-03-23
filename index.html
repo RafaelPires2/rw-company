@@ -32,7 +32,6 @@
     <main class="main">
       <div class="wrapper">
         <div class="container-main">
-
           <div class="content-main">
             <h1 class="c-title">
               Tenha um time completo de marketing
@@ -46,34 +45,47 @@
               <span class="c-bookmark">RW Company.</span>
             </p>
           </div>
-  
+
           <div class="content-form">
             <form class="c-form" action="">
               <h1 class="c-subtitle">Elevar o nível AGORA</h1>
-              <input
+              <label>
+                <input
+                  class="c-input"
+                  type="text"
+                  placeholder="Nome"
+                  required
+                  maxlength="100"
+                />
+              </label>
+
+              <label>
+                <input
+                  class="c-input"
+                  type="email"
+                  placeholder="Email"
+                  required
+                  maxlength="50"
+                />
+              </label>
+
+              <label>
+                <input
+                  class="c-input"
+                  type="tel"
+                  placeholder="Telefone"
+                  required
+                  maxlength="20"
+                />
+              </label>
+
+              <textarea
+                id="textareaForm"
                 class="c-input"
-                type="text"
-                placeholder="Nome"
-                required
-                maxlength="100"
-              />
-              <input
-                class="c-input"
-                type="email"
-                placeholder="Email"
-                required
-                maxlength="50"
-              />
-              <input
-                class="c-input"
-                type="tel"
-                placeholder="Telefone"
-                required
-                maxlength="20"
-              />
-              <textarea id="textareaForm" class="c-input" rows="6" cols="50">
-                digite aqui
-              </textarea>
+                rows="6"
+                cols="50"
+                placeholder="Digite aqui sua mensagem"
+              ></textarea>
               <button class="c-button" type="submit">
                 RECEBER CONTATO DA RW COMPANY
               </button>
@@ -87,7 +99,7 @@
           <div class="container-about">
             <div class="img-container-about">
               <img class="circle1" src="./styles/assets/circle1.svg" alt="" />
-  
+
               <div class="img-about"></div>
             </div>
             <article class="content-article-about">
@@ -100,21 +112,21 @@
                 empresa a vender mais.
               </p>
               <p class="c-subtitle">
-                Fazemos isso através de sólidos processos metodológicos validados
-                na última década.
+                Fazemos isso através de sólidos processos metodológicos
+                validados na última década.
               </p>
-  
+
               <div class="container-card-about">
                 <div class="c-card-about">
                   <p class="c-subtitle c-bookmark">+2 Milhões</p>
                   <p class="c-paragraph">Em vendas para nossos clientes</p>
                 </div>
-  
+
                 <div class="c-card-about">
                   <p class="c-subtitle c-bookmark">+763</p>
                   <p class="c-paragraph">Clientes ativos</p>
                 </div>
-  
+
                 <div class="c-card-about">
                   <p class="c-subtitle c-bookmark">+20</p>
                   <p class="c-paragraph">Escritórios RW pelo Brasil</p>
@@ -346,9 +358,16 @@
           />
 
           <div class="socials-icons">
-            <img src="./styles/assets/icons-instagram.svg" alt="" />
-            <img src="./styles/assets/icons-instagram.svg" alt="" />
-            <img src="./styles/assets/icons-youtube.svg" alt="" />
+            <a href="https://www.instagram.com" target="_blank"
+              ><img
+                src="./styles/assets/icons-instagram.svg"
+                alt="link para o instagram"
+            /></a>
+            <a href="https://www.youtube.com" target="_blank"
+              ><img
+                src="./styles/assets/icons-youtube.svg"
+                alt="link para o youtube"
+            /></a>
           </div>
         </div>
       </footer>
