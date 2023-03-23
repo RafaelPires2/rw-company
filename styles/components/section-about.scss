@@ -94,10 +94,13 @@
 
 @media only screen and (max-width: 425px) {
     .container-about{
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .img-about{
+        height: 400px;
     }
     .img-container-about {
-       display: none;
+        width: 100%;
     }
 
     .container-about {
