@@ -59,3 +59,49 @@ html{
     filter: saturate(2);
     font-weight: 600;
 }
+
+
+// 1024px
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 90vw;
+    }
+    
+    .c-title{
+        font-size: 4rem;   
+    }
+    .c-subtitle{
+        font-size: 2.6rem;   
+    }
+    
+    .c-paragraph {
+        font-size: 1.6rem;    
+    }
+  }
+
+  // 768px
+
+  @media only screen and (max-width: 768px) {
+    
+    .c-title{
+        font-size: 3.6rem;   
+    }
+    .c-subtitle{
+        font-size: 2.2rem;   
+    }
+    
+  }
+
+   // 425px
+
+   @media only screen and (max-width: 425px) {
+    
+    .c-title{
+        font-size: 3rem;   
+    }
+    .c-subtitle{
+        font-size: 2rem;   
+    }
+    
+  }

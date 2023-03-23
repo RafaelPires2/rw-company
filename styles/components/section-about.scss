@@ -1,9 +1,12 @@
 .section-about {
     display: flex;
-    margin-top: $margin-bottom;
+    margin-block: $margin-bottom;
     width: 100vw;
     justify-content: center;
     background-color: $background-secondary;
+}
+.container-about{
+    display: flex;
 }
 .img-container-about {
     height: 100%;
@@ -12,6 +15,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
+
+    
 }
 .circle1 {
     width: 100%;
@@ -20,35 +25,86 @@
     top: -100px;
     z-index: -1;
 }
-
 .img-about{
-    width: 60%;
+    width: 100%;
+    height: 610px;
+    background-image: url("assets/mulher-negra-negocios.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
+
 .content-article-about{
-    width: 60%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 15px;
+    padding: 15px 0 15px 20px;
     gap: 20px;
 }
 
 .container-card-about{
+    margin-top: 6rem;
     display: flex;
     width: 100%;
     gap: 5%;
-    margin-top: $margin-bottom;
 }
 
 .c-card-about{
     display: flex;
     flex-direction: column;
     background-color: rgba(37, 23, 109, .2);
-    width: 33%;
-    height: 100%;
+    width: 32%;
+    min-height: 100px;
     padding: 20px 15px;
     text-align: center;
     border-radius: 8px;
 }
+
+// 1024px
+
+@media only screen and (max-width: 1024px) {
+    
+    .container-card-about{
+        gap: 2%;
+        margin-top: 2rem;
+
+        .c-subtitle {
+            font-size: 2.2rem;
+        }
+        .c-paragraph {
+            font-size: 1.4rem;
+        }
+        
+    }
+    .img-about{
+        height: 570px;
+    }
+  }
+
+  // 768px
+@media only screen and (max-width: 768px) {
+    .img-about{
+        height: 600px;
+    }
+  }
+
+// 425px
+
+@media only screen and (max-width: 425px) {
+    .container-about{
+        flex-direction: column;
+    }
+    .img-container-about {
+       display: none;
+    }
+
+    .container-about {
+        width: 100%;
+    }
+    .content-article-about{
+        width: 100%;
+        padding: 2rem 0;
+    }
+  }

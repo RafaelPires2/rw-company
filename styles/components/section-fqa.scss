@@ -5,7 +5,7 @@
     justify-content: center;
     padding-block: $margin-bottom ;
     background-color: $background-secondary;
-    margin-block: $margin-bottom;
+    margin-bottom: $margin-bottom;
 }
 
 .content-fqa{
@@ -22,3 +22,24 @@
 .section-fqa .accordeon label {
     background-color: $background-primary;
 }
+
+// 768px
+
+@media only screen and (max-width: 768px) {
+    .content-fqa .accordeon {
+        width: 80%;
+    }
+    
+  }
+
+  // 425px
+
+@media only screen and (max-width: 425px) {
+    .content-fqa .accordeon {
+        width: 90%;
+    }
+    .content-fqa .accordeon label {
+       font-size: 1.8rem;
+    }
+    
+  }

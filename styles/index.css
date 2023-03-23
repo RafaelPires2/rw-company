@@ -57,6 +57,36 @@ html {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    width: 90vw;
+  }
+  .c-title {
+    font-size: 4rem;
+  }
+  .c-subtitle {
+    font-size: 2.6rem;
+  }
+  .c-paragraph {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .c-title {
+    font-size: 3.6rem;
+  }
+  .c-subtitle {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .c-title {
+    font-size: 3rem;
+  }
+  .c-subtitle {
+    font-size: 2rem;
+  }
+}
 .header {
   display: flex;
   align-items: center;
@@ -65,7 +95,6 @@ html {
 
 .header .wrapper {
   display: flex;
-  width: 80vw;
   align-items: center;
   justify-content: space-between;
   margin-block: 2rem 8rem;
@@ -84,21 +113,55 @@ html {
   align-items: center;
 }
 
+.container-main {
+  display: flex;
+}
+
 .content-main {
   display: flex;
   flex-direction: column;
-  max-width: 800px;
-  margin-right: 50px;
+  width: 60%;
+  margin-right: 5%;
   gap: 2.5rem;
 }
 
+.content-form {
+  width: 40%;
+}
+
+@media only screen and (max-width: 425px) {
+  .header .wrapper {
+    margin-block: 2rem 0rem;
+  }
+  .header .wrapper .c-button {
+    width: 18rem;
+  }
+  .container-main {
+    flex-direction: column;
+  }
+  .content-main {
+    width: 100%;
+    height: 70vh;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .content-form {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .header .wrapper .c-button {
+    width: 15rem;
+    font-size: 1.6rem;
+  }
+}
 .c-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
   max-width: 400px;
+  min-width: 290px;
   height: 100%;
   background-color: rgba(37, 23, 109, 0.206);
   padding: 4rem 2.6rem;
@@ -123,7 +186,7 @@ html {
 }
 
 #textareaForm {
-  height: 100%;
+  height: 10rem;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -151,10 +214,14 @@ html {
 
 .section-about {
   display: flex;
-  margin-top: 6rem;
+  margin-block: 6rem;
   width: 100vw;
   justify-content: center;
   background-color: rgba(19, 18, 36, 0.7529411765);
+}
+
+.container-about {
+  display: flex;
 }
 
 .img-container-about {
@@ -175,41 +242,80 @@ html {
 }
 
 .img-about {
-  width: 60%;
+  width: 100%;
+  height: 610px;
+  background-image: url("assets/mulher-negra-negocios.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .content-article-about {
-  width: 60%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 15px;
+  padding: 15px 0 15px 20px;
   gap: 20px;
 }
 
 .container-card-about {
+  margin-top: 6rem;
   display: flex;
   width: 100%;
   gap: 5%;
-  margin-top: 6rem;
 }
 
 .c-card-about {
   display: flex;
   flex-direction: column;
   background-color: rgba(37, 23, 109, 0.2);
-  width: 33%;
-  height: 100%;
+  width: 32%;
+  min-height: 100px;
   padding: 20px 15px;
   text-align: center;
   border-radius: 8px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container-card-about {
+    gap: 2%;
+    margin-top: 2rem;
+  }
+  .container-card-about .c-subtitle {
+    font-size: 2.2rem;
+  }
+  .container-card-about .c-paragraph {
+    font-size: 1.4rem;
+  }
+  .img-about {
+    height: 570px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .img-about {
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container-about {
+    flex-direction: column;
+  }
+  .img-container-about {
+    display: none;
+  }
+  .container-about {
+    width: 100%;
+  }
+  .content-article-about {
+    width: 100%;
+    padding: 2rem 0;
+  }
+}
 .section-services {
   display: flex;
-  margin-block: 6rem;
+  margin-bottom: 6rem;
   width: 100vw;
   justify-content: center;
   background-color: #080713;
@@ -255,6 +361,40 @@ html {
   gap: 25px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .section-services .c-button {
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container-services {
+    flex-direction: column;
+  }
+  .content-services {
+    width: 100%;
+  }
+  .container-services .accordeon {
+    width: 90%;
+    margin-block: 4rem;
+  }
+  .container-services .accordeon label {
+    font-size: 1.8rem;
+  }
+  .section-services .c-button {
+    width: 90%;
+  }
+  .section-services .wrapper {
+    align-items: flex-start;
+  }
+  .section-services li {
+    margin-left: 80px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .section-services li {
+    margin-left: 40px;
+  }
+}
 .accordeon {
   display: flex;
   flex-direction: column;
@@ -265,7 +405,7 @@ html {
 .accordeon label {
   display: block;
   padding-block: 1.5rem;
-  padding-left: 3rem;
+  padding-inline: 3rem 1rem;
   font-weight: 700;
   font-size: 2.2rem;
   background: rgba(19, 18, 36, 0.7529411765);
@@ -309,7 +449,7 @@ html {
   justify-content: center;
   padding-block: 6rem;
   background-color: rgba(19, 18, 36, 0.7529411765);
-  margin-block: 6rem;
+  margin-bottom: 6rem;
 }
 
 .content-fqa {
@@ -327,6 +467,19 @@ html {
   background-color: #080713;
 }
 
+@media only screen and (max-width: 768px) {
+  .content-fqa .accordeon {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .content-fqa .accordeon {
+    width: 90%;
+  }
+  .content-fqa .accordeon label {
+    font-size: 1.8rem;
+  }
+}
 .section-call {
   width: 100vw;
   display: flex;
@@ -346,6 +499,7 @@ html {
   flex-direction: column;
   width: 40%;
   text-align: left;
+  gap: 1rem;
 }
 
 .box-call {
@@ -368,13 +522,59 @@ html {
   margin-left: 150px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .icon-alert {
+    margin-left: 120px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .icon-alert {
+    margin-left: 100px;
+  }
+  .box-call .c-button {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container-section-call {
+    flex-direction: column;
+  }
+  .content-call {
+    width: 100%;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  .box-call {
+    width: 100%;
+    padding: 3rem 3rem;
+    gap: 3rem;
+  }
+  .icon-alert {
+    margin-left: 150px;
+  }
+  .box-call .c-button {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .icon-alert {
+    margin-left: 120px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .icon-alert {
+    margin-left: 100px;
+  }
+}
 .footer {
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(19, 18, 36, 0.7529411765);
-  padding-block: 6rem;
+  padding-block: 4rem;
 }
 
 .footer .wrapper {
