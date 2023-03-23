@@ -17,12 +17,19 @@ ul, li, a, textarea{
 html{
     scroll-behavior: smooth;
     color: white;
+    overflow-x: hidden;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: $background-primary;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $color-point;
+    border-radius: 2rem; 
+}
 
 :root {
-    // --border-bottom:0.1px solid rgba(255, 255, 255, 0.150);
-
     font-size: 62.5%;
 }
 
