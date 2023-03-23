@@ -6,26 +6,27 @@
     background-color: $background-secondary;
 }
 .img-container-about {
-    height: 700px;
-    width: 40%;
+    height: 100%;
+    width: 50%;
     display: flex;
+    align-items: center;
     justify-content: center;
     position: relative;
 }
 .circle1 {
-    width: 700px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: -100px;
     z-index: -1;
 }
 
 .img-about{
-    width: 500px;
-    height: 100%;
+    width: 60%;
 }
 .content-article-about{
     width: 60%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
