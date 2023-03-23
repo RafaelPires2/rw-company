@@ -66,13 +66,14 @@
           </div>
 
           <div class="content-form">
-            <form id="form" class="c-form" action="">
+            <form id="form" class="c-form" onSubmit={sendEmail}>
               <h1 class="c-subtitle">Elevar o nível AGORA</h1>
               <label>
                 <input
                   id="inputName"
                   class="c-input"
                   type="text"
+                  name="user_name" 
                   placeholder="Nome"
                   required
                   maxlength="100"
@@ -83,6 +84,7 @@
                 <input
                   id="inputEmail"
                   class="c-input"
+                  name="user_email"
                   type="email"
                   placeholder="Email"
                   required
@@ -96,6 +98,7 @@
                   class="c-input"
                   type="tel"
                   placeholder="Telefone"
+                  name="telefone"
                   required
                   maxlength="20"
                 />
@@ -103,6 +106,7 @@
 
               <textarea
                 id="textareaForm"
+                name="message"
                 class="c-input"
                 rows="6"
                 cols="50"
@@ -394,5 +398,7 @@
         </div>
       </footer>
     </main>
+
+    <script src="./scripts/email.js"></script>
   </body>
 </html>
