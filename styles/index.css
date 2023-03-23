@@ -100,6 +100,11 @@ html {
   margin-block: 2rem 8rem;
 }
 
+.header .wrapper .c-button {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
 .c-logo {
   width: 100px;
   height: 100px;
@@ -135,6 +140,7 @@ html {
   }
   .header .wrapper .c-button {
     width: 18rem;
+    font-size: 1.4rem;
   }
   .container-main {
     flex-direction: column;
@@ -152,7 +158,9 @@ html {
 @media only screen and (max-width: 320px) {
   .header .wrapper .c-button {
     width: 15rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    display: flex;
+    text-align: center;
   }
 }
 .c-form {
