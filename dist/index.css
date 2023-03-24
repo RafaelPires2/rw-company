@@ -98,6 +98,70 @@ html {
     font-size: 2rem;
   }
 }
+.c-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  min-width: 290px;
+  height: 100%;
+  background-color: rgba(37, 23, 109, 0.206);
+  padding: 4rem 2.6rem;
+  gap: 1.6rem;
+  border-radius: 8px;
+}
+
+.c-form .c-button {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.content-form label {
+  width: 100%;
+}
+
+.c-input {
+  width: 100%;
+  height: 5rem;
+  border: 1px solid #6610f2;
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 1.6rem;
+  color: rgba(255, 255, 255, 0.896);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+#textareaForm {
+  padding: 1rem;
+  height: 10rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.c-button {
+  background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
+  width: 23rem;
+  height: 5.8rem;
+  border: 0.5px solid #6610f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+.c-button:hover {
+  box-shadow: 0px 0px 10px rgba(102, 16, 242, 0.7);
+  scale: 1.03;
+  transition: 0.3s;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -174,70 +238,6 @@ html {
     text-align: center;
   }
 }
-.c-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 400px;
-  min-width: 290px;
-  height: 100%;
-  background-color: rgba(37, 23, 109, 0.206);
-  padding: 4rem 2.6rem;
-  gap: 1.6rem;
-  border-radius: 8px;
-}
-
-.c-form .c-button {
-  width: 100%;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.content-form label {
-  width: 100%;
-}
-
-.c-input {
-  width: 100%;
-  height: 5rem;
-  border: 1px solid #6610f2;
-  border-radius: 4px;
-  background-color: transparent;
-  padding-left: 1.6rem;
-  color: rgba(255, 255, 255, 0.896);
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-#textareaForm {
-  padding: 1rem;
-  height: 10rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: left;
-}
-
-.c-button {
-  background: linear-gradient(225deg, rgba(102, 16, 242, 0.3) 0%, rgba(102, 16, 242, 0) 100%);
-  width: 23rem;
-  height: 5.8rem;
-  border: 0.5px solid #6610f2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: white;
-}
-
-.c-button:hover {
-  box-shadow: 0px 0px 10px rgba(102, 16, 242, 0.7);
-  scale: 1.03;
-  transition: 0.3s;
-}
-
 .section-about {
   display: flex;
   margin-block: 6rem;
@@ -270,7 +270,7 @@ html {
 .img-about {
   width: 100%;
   height: 610px;
-  background-image: url("assets/mulher-negra-negocios.webp");
+  background-image: url("../../styles/assets/mulher-negra-negocios.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -304,6 +304,11 @@ html {
   border-radius: 8px;
 }
 
+@media only screen and (max-width: 1366px) {
+  .img-about {
+    height: 670px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .container-card-about {
     gap: 2%;
