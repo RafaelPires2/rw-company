@@ -1,14 +1,23 @@
-const { src, dest, watch, series } = require("gulp");
+const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
+const gulpEsbuild = require('gulp-esbuild');
 
-// função converter index.scss em index.css na pasta styles
-function buildStyles() {
-  return src("styles/index.scss").pipe(sass()).pipe(dest("styles"));
+const taskSass = () => gulp
+  .src("./styles/index.scss")
+  .pipe(sass())
+  .pipe(gulp.dest("./dist"))
+
+const taskScripts = () => gulp
+  .src('./scripts/**/*.js')
+  .pipe(gulpEsbuild({
+    outfile: 'index.js',
+    bundle: true,
+  }))
+  .pipe(gulp.dest('./dist'))
+
+const tasksWatch = () => {
+  gulp.watch(["./styles/**/*.scss"], taskSass)
+  gulp.watch('./scripts/**/*.js', taskScripts)
 }
 
-// vai assistir todas as pastas e arquivos que estão dentro de styles e executar novamente a função buildStyles
-function watchTask() {
-  watch(["styles/**/*.scss"], buildStyles);
-}
-
-exports.default = series(buildStyles, watchTask);
+exports.default = gulp.series(taskSass, taskScripts, tasksWatch);
