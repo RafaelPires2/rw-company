@@ -97,8 +97,12 @@
     }
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 320px){
     .icon-alert{
         margin-left: 100px;
+    }
+
+    .box-call .c-button {
+        font-size: 1.4rem;
     }
 }

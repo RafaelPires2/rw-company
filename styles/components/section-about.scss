@@ -7,6 +7,7 @@
 }
 .container-about{
     display: flex;
+    width: 100%;
 }
 .img-container-about {
     height: 100%;
@@ -14,9 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-
-    
+    position: relative;    
 }
 .circle1 {
     width: 100%;

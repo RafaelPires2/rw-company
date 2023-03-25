@@ -30,6 +30,9 @@
     display: flex;
     width: 100%;
     gap: 10%;
+    justify-content: center;
+    align-items: center;
+
 }
 .section-services li{
     list-style: initial;
@@ -78,7 +81,7 @@
    }
 
    .section-services .c-button {
-    width: 90%;
+    width: 100%;
    }
    .section-services .wrapper {
     align-items: flex-start;

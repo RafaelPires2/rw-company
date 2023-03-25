@@ -135,7 +135,7 @@ html {
 }
 
 #textareaForm {
-  padding: 1rem;
+  padding: 1rem 1.6rem;
   height: 10rem;
   display: flex;
   align-items: flex-start;
@@ -195,17 +195,20 @@ html {
 
 .container-main {
   display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .content-main {
   display: flex;
   flex-direction: column;
   width: 60%;
-  margin-right: 5%;
   gap: 2.5rem;
 }
 
 .content-form {
+  display: flex;
+  justify-content: center;
   width: 40%;
 }
 
@@ -248,6 +251,7 @@ html {
 
 .container-about {
   display: flex;
+  width: 100%;
 }
 
 .img-container-about {
@@ -375,6 +379,8 @@ html {
   display: flex;
   width: 100%;
   gap: 10%;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-services li {
@@ -415,7 +421,7 @@ html {
     font-size: 1.8rem;
   }
   .section-services .c-button {
-    width: 90%;
+    width: 100%;
   }
   .section-services .wrapper {
     align-items: flex-start;
@@ -597,9 +603,12 @@ html {
     margin-left: 120px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 320px) {
   .icon-alert {
     margin-left: 100px;
+  }
+  .box-call .c-button {
+    font-size: 1.4rem;
   }
 }
 .footer {
