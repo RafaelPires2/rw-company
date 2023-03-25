@@ -4,5 +4,5 @@
 
 <br>
 
-<a href="https://youtu.be/m40nrlj9jGg"><img src="./public/imgrw.jpg" /></a>
+<a href="https://youtu.be/m40nrlj9jGg"><img src="./styles/assets/imgrw.jpg" /></a>
 
