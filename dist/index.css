@@ -527,6 +527,9 @@ html {
   align-items: center;
   margin-bottom: 6rem;
 }
+.section-call span {
+  color: rgba(255, 0, 0, 0.818);
+}
 
 .container-section-call {
   display: flex;

@@ -5,6 +5,10 @@
     align-items: center;
 
     margin-bottom: $margin-bottom;
+
+    span {
+        color: rgba(255, 0, 0, 0.818);
+    }
 }
 
 .container-section-call {
